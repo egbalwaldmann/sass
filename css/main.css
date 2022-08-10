@@ -1,5 +1,73 @@
-h1 {
-  color: white;
-  background: blue;
-  border: 5px solid red;
+/* grid-area colors for visually recognizing the sections during development */
+body {
+  padding: 1%;
+}
+
+div {
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* whole page wrapper */
+.page-wrap {
+  background-color: rgb(11, 13, 14);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 5rem 5rem 15rem 10rem 20rem 15rem;
+  gap: 10px;
+  height: auto;
+  width: 100%;
+}
+
+/* THE SECTIONS */
+/* header section */
+.download {
+  background-color: rgb(183, 183, 239);
+  grid-column: 1/span 2;
+}
+
+.logo {
+  background-color: rgb(208, 96, 96);
+  grid-column: 3/span 2;
+}
+
+.socials {
+  background-color: rgb(61, 205, 61);
+  grid-column: 5/span 2;
+}
+
+/* navbar section */
+.navigationbar {
+  background-color: rgb(218, 96, 218);
+  grid-column: 1/span 6;
+}
+
+/* banner section */
+.banner {
+  background-color: yellow;
+  grid-column: 1/span 6;
+}
+
+/* journal section */
+.journal {
+  background-color: orange;
+  grid-column: 1/span 6;
+}
+
+/* recipes section */
+.favourite {
+  background-color: rgb(154, 197, 90);
+  grid-column: 1/span 3;
+}
+
+.recipes {
+  background-color: lightgreen;
+  grid-column: 4/span 3;
+}
+
+/* culinary collection section */
+.collection {
+  background-color: rgb(225, 76, 198);
+  grid-column: 1/span 6;
 }/*# sourceMappingURL=main.css.map */

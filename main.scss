@@ -1,10 +1,84 @@
-$rangeasli:white;
-$bg_p:blue;
-$kadr: 5px solid red;
+/* grid-area colors for visually recognizing the sections during development */
+$color0:rgb(11, 13, 14);
+$color1:rgb(183, 183, 239);
+$color2:rgb(208, 96, 96);
+$color3:rgb(61, 205, 61);
+$color4:rgb(218, 96, 218);
+$color5:yellow;
+$color6:orange;
+$color7:rgb(154, 197, 90);
+$color8:lightgreen;
+$color9:rgb(225, 76, 198);
 
-h1{
-    color: $rangeasli;
-    background: $bg_p;
-    border: $kadr;
+body {
+    padding: 1%;
 }
 
+div {
+    font-size: xx-large;
+    text-align: center;
+    
+    
+}
+/* whole page wrapper */
+.page-wrap {
+    background-color: $color0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 5rem 5rem 15rem 10rem 20rem 15rem;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    
+}
+
+/* THE SECTIONS */
+
+/* header section */
+.download {
+    background-color: $color1;
+    grid-column: 1 / span 2;
+}
+.logo {
+    background-color: $color2;
+    grid-column: 3 / span 2;
+}
+.socials {
+    background-color: $color3;
+    grid-column: 5 / span 2;
+}
+
+/* navbar section */
+.navigationbar {
+    background-color: $color4;
+    grid-column: 1 / span 6;
+}
+
+/* banner section */
+.banner {
+    background-color: $color5;
+    grid-column: 1 / span 6;
+}
+
+/* journal section */
+.journal {
+    background-color: $color6;
+    grid-column: 1 / span 6;
+}
+
+/* recipes section */
+.favourite {
+    background-color: $color7;
+    grid-column: 1 / span 3;
+}
+.recipes {
+    background-color: $color8;
+    grid-column: 4 / span 3;
+}
+
+/* culinary collection section */
+.collection {
+    background-color: $color9;
+    grid-column: 1 / span 6;
+}
